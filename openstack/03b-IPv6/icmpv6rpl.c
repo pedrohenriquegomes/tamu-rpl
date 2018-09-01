@@ -607,6 +607,11 @@ void sendDIO() {
     } else {
         openqueue_freePacketBuffer(msg);
     }
+    
+    
+    debugpins_task_set();
+    uint16_t beta_num = openrandom_getBeta(128,128);
+    debugpins_task_clr();
 }
 
 //===== DAO-related

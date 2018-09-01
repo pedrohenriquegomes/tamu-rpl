@@ -18,6 +18,8 @@ int mote_main(void) {
    
    // indicate
    
+   debugpins_task_clr();
+   
    // start
    scheduler_start();
    return 0; // this line should never be reached

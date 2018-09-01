@@ -251,6 +251,7 @@ enum {
    ERR_SCHEDULE_ADDDUPLICATESLOT       = 0x3f, // the slot {0} to be added is already in schedule
    ERR_UNSUPPORTED_FORMAT              = 0x40, // the received packet format is not supported {code location {0}}
    ERR_UNSUPPORTED_METADATA            = 0x41, // the metadata type is not suppored
+   ERR_BETA_VALUE                      = 0x40, // test {0} beta value {1}   
 };
 
 //=========================== typedef =========================================

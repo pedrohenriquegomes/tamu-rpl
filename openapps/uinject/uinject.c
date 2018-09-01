@@ -6,6 +6,7 @@
 #include "scheduler.h"
 #include "IEEE802154E.h"
 #include "idmanager.h"
+#include "openrandom.h"
 
 //=========================== variables =======================================
 
@@ -13,8 +14,13 @@ uinject_vars_t uinject_vars;
 
 static const uint8_t uinject_dst_addr[]   = {
    0xbb, 0xbb, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-   0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01
+   0x14, 0x15, 0x92, 0x00, 0x10, 0xf4, 0x13, 0xcf
 }; 
+
+//static const uint8_t uinject_dst_addr[]   = {
+//   0xbb, 0xbb, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+//   0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01
+//}; 
 
 //=========================== prototypes ======================================
 
@@ -43,6 +49,13 @@ void uinject_init() {
         TIME_MS,
         TIMER_PERIODIC,
         uinject_timer_cb
+    );
+    
+    openserial_printError(
+      COMPONENT_UINJECT,
+      ERR_RCVD_ECHO_REQUEST,
+      (errorparameter_t)0,
+      (errorparameter_t)0
     );
 }
 
@@ -79,7 +92,7 @@ void uinject_task_cb() {
    
    // don't run if not synch
    if (ieee154e_isSynch() == FALSE) return;
-   
+    
    // don't run on dagroot
    if (idmanager_getIsDAGroot()) {
       opentimers_destroy(uinject_vars.timerId);
@@ -120,11 +133,10 @@ void uinject_task_cb() {
    pkt->payload[2] = asnArray[2];
    pkt->payload[3] = asnArray[3];
    pkt->payload[4] = asnArray[4];
-   
+       
    if ((openudp_send(pkt))==E_FAIL) {
       openqueue_freePacketBuffer(pkt);
    }
 }
-
 
 
