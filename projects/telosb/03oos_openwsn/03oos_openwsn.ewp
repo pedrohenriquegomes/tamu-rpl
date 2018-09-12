@@ -62,7 +62,7 @@
         </option>
         <option>
           <name>RTLibraryPath</name>
-          <state>$TOOLKIT_DIR$\LIB\DLIB\dl430fn.r43</state>
+          <state>$TOOLKIT_DIR$\lib\dlib\dl430fn.r43</state>
         </option>
         <option>
           <name>Input variant</name>
@@ -224,7 +224,7 @@
         </option>
         <option>
           <name>Math description</name>
-          <state></state>
+          <state>Default variants of cos, sin, tan, log, log10, pow, and exp.</state>
         </option>
       </data>
     </settings>
@@ -237,7 +237,7 @@
         <debug>1</debug>
         <option>
           <name>CCDefines</name>
-          <state></state>
+          <state>DAGROOT</state>
         </option>
         <option>
           <name>CCPreprocFile</name>
@@ -2447,111 +2447,12 @@
   <group>
     <name>openapps</name>
     <group>
-      <name>c6t</name>
-      <file>
-        <name>$PROJ_DIR$\..\..\..\openapps\c6t\c6t.c</name>
-      </file>
-      <file>
-        <name>$PROJ_DIR$\..\..\..\openapps\c6t\c6t.h</name>
-      </file>
-    </group>
-    <group>
-      <name>cexample</name>
-      <file>
-        <name>$PROJ_DIR$\..\..\..\openapps\cexample\cexample.c</name>
-      </file>
-      <file>
-        <name>$PROJ_DIR$\..\..\..\openapps\cexample\cexample.h</name>
-      </file>
-    </group>
-    <group>
-      <name>cinfo</name>
-      <file>
-        <name>$PROJ_DIR$\..\..\..\openapps\cinfo\cinfo.c</name>
-      </file>
-      <file>
-        <name>$PROJ_DIR$\..\..\..\openapps\cinfo\cinfo.h</name>
-      </file>
-    </group>
-    <group>
-      <name>cleds</name>
-      <file>
-        <name>$PROJ_DIR$\..\..\..\openapps\cleds\cleds.c</name>
-      </file>
-      <file>
-        <name>$PROJ_DIR$\..\..\..\openapps\cleds\cleds.h</name>
-      </file>
-    </group>
-    <group>
-      <name>csensors</name>
-      <file>
-        <name>$PROJ_DIR$\..\..\..\openapps\csensors\csensors.c</name>
-      </file>
-      <file>
-        <name>$PROJ_DIR$\..\..\..\openapps\csensors\csensors.h</name>
-      </file>
-    </group>
-    <group>
-      <name>cstorm</name>
-      <file>
-        <name>$PROJ_DIR$\..\..\..\openapps\cstorm\cstorm.c</name>
-      </file>
-      <file>
-        <name>$PROJ_DIR$\..\..\..\openapps\cstorm\cstorm.h</name>
-      </file>
-    </group>
-    <group>
-      <name>cwellknown</name>
-      <file>
-        <name>$PROJ_DIR$\..\..\..\openapps\cwellknown\cwellknown.c</name>
-      </file>
-      <file>
-        <name>$PROJ_DIR$\..\..\..\openapps\cwellknown\cwellknown.h</name>
-      </file>
-    </group>
-    <group>
-      <name>opencoap</name>
-      <file>
-        <name>$PROJ_DIR$\..\..\..\openapps\opencoap\opencoap.c</name>
-      </file>
-      <file>
-        <name>$PROJ_DIR$\..\..\..\openapps\opencoap\opencoap.h</name>
-      </file>
-    </group>
-    <group>
-      <name>rrt</name>
-      <file>
-        <name>$PROJ_DIR$\..\..\..\openapps\rrt\rrt.c</name>
-      </file>
-      <file>
-        <name>$PROJ_DIR$\..\..\..\openapps\rrt\rrt.h</name>
-      </file>
-    </group>
-    <group>
-      <name>uecho</name>
-      <file>
-        <name>$PROJ_DIR$\..\..\..\openapps\uecho\uecho.c</name>
-      </file>
-      <file>
-        <name>$PROJ_DIR$\..\..\..\openapps\uecho\uecho.h</name>
-      </file>
-    </group>
-    <group>
       <name>uinject</name>
       <file>
         <name>$PROJ_DIR$\..\..\..\openapps\uinject\uinject.c</name>
       </file>
       <file>
         <name>$PROJ_DIR$\..\..\..\openapps\uinject\uinject.h</name>
-      </file>
-    </group>
-    <group>
-      <name>userialbridge</name>
-      <file>
-        <name>$PROJ_DIR$\..\..\..\openapps\userialbridge\userialbridge.c</name>
-      </file>
-      <file>
-        <name>$PROJ_DIR$\..\..\..\openapps\userialbridge\userialbridge.h</name>
       </file>
     </group>
     <file>
