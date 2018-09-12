@@ -7,7 +7,7 @@
     "Horizontal trigger position": "0",
     "Max Height": "1X",
     "Operation Mode": "Stream Mode",
-    "Sample count": "1250000000",
+    "Sample count": "500000000",
     "Sample rate": "25000000",
     "Stop Options": "Upload captured data",
     "Threshold Level": 1,
@@ -25,7 +25,7 @@
             "enabled": true,
             "index": 0,
             "name": "frame",
-            "strigger": 5,
+            "strigger": 0,
             "type": 10000
         },
         {
@@ -33,7 +33,7 @@
             "enabled": true,
             "index": 1,
             "name": "slot",
-            "strigger": 5,
+            "strigger": 0,
             "type": 10000
         },
         {
@@ -41,47 +41,47 @@
             "enabled": true,
             "index": 2,
             "name": "fsm",
-            "strigger": 5,
+            "strigger": 0,
             "type": 10000
         },
         {
             "colour": "#969696",
             "enabled": true,
             "index": 3,
-            "name": "3",
-            "strigger": 5,
+            "name": "task",
+            "strigger": 0,
             "type": 10000
         },
         {
             "colour": "#969696",
             "enabled": true,
             "index": 4,
-            "name": "4",
-            "strigger": 5,
+            "name": "isr",
+            "strigger": 0,
             "type": 10000
         },
         {
             "colour": "#969696",
             "enabled": true,
             "index": 5,
-            "name": "5",
-            "strigger": 5,
+            "name": "uarttx",
+            "strigger": 0,
             "type": 10000
         },
         {
             "colour": "#969696",
             "enabled": true,
             "index": 6,
-            "name": "6",
-            "strigger": 5,
+            "name": "uartrx",
+            "strigger": 0,
             "type": 10000
         },
         {
             "colour": "#969696",
             "enabled": true,
             "index": 7,
-            "name": "7",
-            "strigger": 5,
+            "name": "radio",
+            "strigger": 0,
             "type": 10000
         }
     ],
