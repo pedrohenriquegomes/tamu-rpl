@@ -608,9 +608,12 @@ void sendDIO() {
         openqueue_freePacketBuffer(msg);
     }
     
-    
     debugpins_task_set();
-    uint16_t beta_num = openrandom_getBeta(128,128);
+    //uint16_t beta_num = openrandom_getBetaShellSort(255, 255);
+    //uint16_t beta_num = openrandom_getBetaQSort(255, 255);
+    //float beta_num = openrandom_getBetaGamma(255, 255);
+    float beta_num = openrandom_getBetaCheng(100, 23);
+    
     debugpins_task_clr();
 }
 

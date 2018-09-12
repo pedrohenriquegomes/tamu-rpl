@@ -76,7 +76,7 @@ void board_init(void) {
    radio_init();
    i2c_init();
    sensors_init();
-   cryptoengine_init();
+   //cryptoengine_init();
 }
 
 /**

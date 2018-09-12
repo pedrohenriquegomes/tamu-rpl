@@ -24,7 +24,8 @@ typedef struct {
 
 void     openrandom_init(void);
 uint16_t openrandom_get16b(void);
-uint16_t openrandom_getBeta(uint8_t alpha, uint8_t beta);
+uint16_t openrandom_getBetaShellSort(uint8_t alpha, uint8_t beta);
+uint16_t openrandom_getBetaQSort(uint8_t alpha, uint8_t beta);
 
 /**
 \}

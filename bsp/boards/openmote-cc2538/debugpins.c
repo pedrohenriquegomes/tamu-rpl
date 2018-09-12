@@ -66,24 +66,24 @@ void debugpins_slot_set() {
 
 // PD2
 void debugpins_fsm_toggle() {
-	bspDBpinToggle(BSP_PIND_BASE, BSP_PIND_2);
+	bspDBpinToggle(BSP_PIND_BASE, BSP_PIND_1);
 }
 void debugpins_fsm_clr() {
-	GPIOPinWrite(BSP_PIND_BASE, BSP_PIND_2, 0);
+	GPIOPinWrite(BSP_PIND_BASE, BSP_PIND_1, 0);
 }
 void debugpins_fsm_set() {
-	GPIOPinWrite(BSP_PIND_BASE, BSP_PIND_2, BSP_PIND_2);
+	GPIOPinWrite(BSP_PIND_BASE, BSP_PIND_1, BSP_PIND_1);
 }
 
 // PD1
 void debugpins_task_toggle() {
-	bspDBpinToggle(BSP_PIND_BASE,BSP_PIND_1);
+	bspDBpinToggle(BSP_PIND_BASE,BSP_PIND_2);
 }
 void debugpins_task_clr() {
-	GPIOPinWrite(BSP_PIND_BASE, BSP_PIND_1, 0);
+	GPIOPinWrite(BSP_PIND_BASE, BSP_PIND_2, 0);
 }
 void debugpins_task_set() {
-	GPIOPinWrite(BSP_PIND_BASE, BSP_PIND_1, BSP_PIND_1);
+	GPIOPinWrite(BSP_PIND_BASE, BSP_PIND_2, BSP_PIND_2);
 }
 
 // PA5

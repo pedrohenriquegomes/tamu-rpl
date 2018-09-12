@@ -12,7 +12,7 @@
 
 //=========================== define ==========================================
 
-#define TIMER_DIO_TIMEOUT         10000  // miliseconds
+#define TIMER_DIO_TIMEOUT         5000  // miliseconds
 #define TIMER_DAO_TIMEOUT         60000  // miliseconds
 
 // Non-Storing Mode of Operation (1)

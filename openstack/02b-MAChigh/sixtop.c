@@ -752,6 +752,14 @@ port_INLINE void sixtop_sendEB() {
    
     // I'm now busy sending an EB
     sixtop_vars.busySendingEB = TRUE;
+    
+    debugpins_task_set();
+    //uint16_t beta_num = openrandom_getBetaShellSort(255, 255);
+    //uint16_t beta_num = openrandom_getBetaQSort(255, 255);
+    //float beta_num = openrandom_getBetaGamma(255, 255);
+    float beta_num = openrandom_getBetaCheng(109, 231);
+    
+    debugpins_task_clr();
 }
 
 /**

@@ -8,14 +8,14 @@ localEnv      = env.Clone()
 
 # apps which should always be built
 defaultApps   = [
-    'c6t',
-    'cinfo',
-    'cleds',
-    'cwellknown',
-    'uecho',
+#    'c6t',
+#    'cinfo',
+#    'cleds',
+#    'cwellknown',
+#    'uecho',
     'uinject',
-    'userialbridge',
-    'rrt',
+#    'userialbridge',
+#    'rrt',
 ]
 if localEnv['board']=='python':
     defaultApps  += [
@@ -30,6 +30,7 @@ defaultAppsInit   = [
 #    'cleds',
 #    'cwellknown',
 #    'rrt',
+    'uinject',
 ]
 
 # additional apps the user wants to build
@@ -39,9 +40,9 @@ else:
     userApps  = []
 
 # union of default and additional apps (without duplicates)
-apps      = ['opencoap']
+apps      = []
 apps     += sorted(list(set(defaultApps+userApps)))
-appsInit  = ['opencoap'] # make sure opencoap is initialized first
+appsInit  = [] # make sure opencoap is initialized first
 appsInit += sorted(list(set(defaultAppsInit+userApps)))
 
 #===== rule to create a (temporary) openapps_dyn.c file
