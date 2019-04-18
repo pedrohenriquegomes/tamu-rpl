@@ -1,26 +1,12 @@
-OpenWSN firmware: stuff that runs on a mote
+# TAMU-TSCH - Thompson sAmpling-based MUlti-channel RPL
 
-Part of UC Berkeley's OpenWSN project, http://www.openwsn.org/.
+Source code with implementation of TAMU-RPL protocol.
 
-Build status
-------------
+This code was based on [OpenWSN][2] 1.10.
 
-|              builder                                                                                                                 |      build                   | outcome
-| ------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------- | ------- 
-| [Travis](https://travis-ci.org/openwsn-berkeley/openwsn-fw)                                                                          | compile                      | [![Build Status](https://travis-ci.org/openwsn-berkeley/openwsn-fw.png?branch=develop)](https://travis-ci.org/openwsn-berkeley/openwsn-fw)
-| [OpenWSN builder](http://builder.openwsn.org/job/Firmware/board=telosb,label=master,project=oos_openwsn,toolchain=mspgcc/)           | compile (TelosB)             | [![Build Status](http://builder.openwsn.org/job/Firmware/board=telosb,label=master,project=oos_openwsn,toolchain=mspgcc/badge/icon/)](http://builder.openwsn.org/job/Firmware/board=telosb,label=master,project=oos_openwsn,toolchain=mspgcc/)
-| [OpenWSN builder](http://builder.openwsn.org/job/Firmware/board=gina,label=master,project=oos_openwsn,toolchain=mspgcc/)             | compile (GINA)               | [![Build Status](http://builder.openwsn.org/job/Firmware/board=gina,label=master,project=oos_openwsn,toolchain=mspgcc/badge/icon/)](http://builder.openwsn.org/job/Firmware/board=gina,label=master,project=oos_macpong,toolchain=mspgcc/)
-| [OpenWSN builder](http://builder.openwsn.org/job/Firmware/board=wsn430v13b,label=master,project=oos_openwsn,toolchain=mspgcc/)       | compile (wsn430v13b)         | [![Build Status](http://builder.openwsn.org/job/Firmware/board=wsn430v13b,label=master,project=oos_openwsn,toolchain=mspgcc/badge/icon/)](http://builder.openwsn.org/job/Firmware/board=wsn430v13b,label=master,project=oos_macpong,toolchain=mspgcc/)
-| [OpenWSN builder](http://builder.openwsn.org/job/Firmware/board=wsn430v14,label=master,project=oos_openwsn,toolchain=mspgcc/)        | compile (wsn430v14)          | [![Build Status](http://builder.openwsn.org/job/Firmware/board=wsn430v14,label=master,project=oos_openwsn,toolchain=mspgcc/badge/icon/)](http://builder.openwsn.org/job/Firmware/board=wsn430v14,label=master,project=oos_macpong,toolchain=mspgcc/)
-| [OpenWSN builder](http://builder.openwsn.org/job/Firmware/board=Z1,label=master,project=oos_openwsn,toolchain=mspgcc/)               | compile (Z1)                 | [![Build Status](http://builder.openwsn.org/job/Firmware/board=z1,label=master,project=oos_openwsn,toolchain=mspgcc/badge/icon/)](http://builder.openwsn.org/job/Firmware/board=z1,label=master,project=oos_macpong,toolchain=mspgcc/)
-| [OpenWSN builder](http://builder.openwsn.org/job/Firmware/board=OpenMote-CC2538,label=master,project=oos_openwsn,toolchain=armgcc/)  | compile (OpenMote-CC2538)    | [![Build Status](http://builder.openwsn.org/job/Firmware/board=OpenMote-CC2538,label=master,project=oos_openwsn,toolchain=armgcc/badge/icon)](http://builder.openwsn.org/job/Firmware/board=OpenMote-CC2538,label=master,project=oos_openwsn,toolchain=armgcc/)
-| [OpenWSN builder](http://builder.openwsn.org/job/Firmware/board=OpenMoteSTM,label=master,project=oos_openwsn,toolchain=armgcc/)      | compile (OpenMoteSTM)        | [![Build Status](http://builder.openwsn.org/job/Firmware/board=openmotestm,label=master,project=oos_openwsn,toolchain=armgcc/badge/icon)](http://builder.openwsn.org/job/Firmware/board=openmotestm,label=master,project=oos_openwsn,toolchain=armgcc/)
-| [OpenWSN builder](http://builder.openwsn.org/job/Firmware/board=IoT-LAB_M3,label=master,project=oos_openwsn,toolchain=armgcc/)       | compile (IoT-LAB_M3)         | [![Build Status](http://builder.openwsn.org/job/Firmware/board=iot-lab_M3,label=master,project=oos_openwsn,toolchain=armgcc/badge/icon)](http://builder.openwsn.org/job/Firmware/board=iot-lab_M3,label=master,project=oos_openwsn,toolchain=armgcc/)
-| [OpenWSN builder](http://builder.openwsn.org/job/Firmware/board=Python,label=master,project=oos_openwsn,toolchain=gcc/)              | compile (Python, simulation) | [![Build Status](http://builder.openwsn.org/job/Firmware/board=python,label=master,project=oos_openwsn,toolchain=gcc/badge/icon)](http://builder.openwsn.org/job/Firmware/board=python,label=master,project=oos_openwsn,toolchain=gcc/)
-| [OpenWSN builder](http://builder.openwsn.org/job/Docs/)                                                                              | publish documentation        | [![Build Status](http://builder.openwsn.org/job/Docs/badge/icon)](http://builder.openwsn.org/job/Docs/)
+This protocol is an adaptation of RPL protocol.
 
-Documentation
--------------
+In TAMU-RPL, the selection of the preferred parent in the RPL protocol is modeled as a Multi-Armed Bandit (MAB) problem and the use of the Thompson Sampling heuristic is investigated to improve the reactiveness of RPL.
+It was introduced in the paper below. Please cite it if you use this source code.
 
-- overview: https://openwsn.atlassian.net/wiki/
-- source code: http://openwsn-berkeley.github.io/firmware/
+[2]:https://openwsn.atlassian.net/wiki/spaces/OW/overview
